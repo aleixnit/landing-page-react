@@ -2,15 +2,15 @@ import "./Card.css";
 
 export default function Card(props) {
   return (
-    <div class="card2">
-      <div class="content">
+    <div className="card2">
+      <div className="content">
         <img src={props.imagen} className="card-img-top rounded-4" alt="..." />
 
-        <p class="heading">{props.titulo}</p>
-        <p class="para">
+        <p className="heading">{props.titulo}</p>
+        <p className="para">
         {props.descripcion}
         </p>
-        <button class="btn">Read more</button>
+        <button className="btn">Read more</button>
       </div>
     </div>
     //     <div className="card" style={{width: '18rem'}}>

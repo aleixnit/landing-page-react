@@ -8,27 +8,27 @@ export default function () {
         id="navbarNavAltMarkup"
       >
         <div className="navbar-nav d-flex text-warning ">
-          <ul class="wrapper">
-            <li class="icon facebook">
-              <span class="tooltip">LinkedIn</span>
+          <ul className="wrapper">
+            <li className="icon facebook">
+              <span className="tooltip">LinkedIn</span>
               <span>
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </span>
             </li>
-            <li class="icon twitter">
-              <span class="tooltip">Github</span>
+            <li className="icon twitter">
+              <span className="tooltip">Github</span>
               <span>
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </span>
             </li>
-            <li class="icon instagram">
-              <span class="tooltip">Instagram</span>
+            <li className="icon instagram">
+              <span className="tooltip">Instagram</span>
               <span>
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </span>
             </li>
           </ul>
-          <span class="footerClass">Copyright 2023@ Aleix Aguilar with ❤️</span>
+          <span className="footerClass">Copyright 2023@ Aleix Aguilar with ❤️</span>
         </div>
       </div>
     </div>
