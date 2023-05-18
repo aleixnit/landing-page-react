@@ -12,7 +12,7 @@ export default function Navbar() {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav ">
-          <button className="btnMenu">
+            <button className="btnMenu">
               <span></span>
               <span></span>
               <span></span>
