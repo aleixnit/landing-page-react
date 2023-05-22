@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css"
+      integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>🐈 Gato-API 🐈</title>
+  </head>
+
+  <body>
+    <div
+      class="container"
+      id="cat-container"
+      style="width: 75%; margin: 1rem auto; text-align: center;"
+    >
+      <img id="cat-image" src="" alt="un gato" />
+      <button id="get-cat" style="margin-top: 1rem;">Nuevo Gato</button>
+    </div>
+
+    <script>
+      const boton = document.querySelector("#get-cat");
+      boton.addEventListener("click", fetchCatImage);
+      console.log(boton);
+
+      function fetchCatImage() {
+        // Hacer una llamada a la API
+        fetch("https://api.thecatapi.com/v1/images/search") // Reemplaza "https://api.example.com/cats" con la URL real de la API de gatos
+          .then((response) => response.json())
+          .then((data) => {
+            // Mostrar el resultado de la llamada a la API por consola
+            console.log(data);
+
+            // Actualizar la imagen del gato en el contenedor
+            const catImage = document.querySelector("#cat-image");
+            catImage.src = data[0].url;
+            catImage.width = data[0].width;
+            catImage.height = data[0].height;
+          })
+          .catch((error) => {
+            console.error("Error al obtener la imagen del gato:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

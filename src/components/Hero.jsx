@@ -29,16 +29,16 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="px-5 mx-4 mt-5 rounded-3 bg-hero d-flex">
-      <div className="container-fluid py-5">
+    <div className="px-5 mx-4 mt-5 rounded-3 bg-hero d-flex heroResponsive">
+      <div className="container-fluid pt-5">
         <h1 className="display-5 fw-bold">
           <span ref={el} />
         </h1>
         <p className="col-md-8 fs-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, <span style={{fontWeight: 'bold'}}>consectetur</span> adipiscing elit, sed do
+          eiusmod tempor <span style={{fontWeight: 'bold'}}>incididunt</span> ut labore et dolore<span style={{fontWeight: 'bold'}}> magna</span> aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco <span style={{fontWeight: 'bold'}}>laboris</span> nisi ut
+          aliquip ex ea <span style={{fontWeight: 'bold'}}>commodo</span> consequat.
         </p>
         <button className="learn-more">
           <span className="circle" aria-hidden="true">
